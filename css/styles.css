@@ -160,6 +160,14 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid; } }
+.logo:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
 @-webkit-keyframes anim-1 {
   0% {
     background: #007766; }
@@ -286,18 +294,57 @@ textarea {
   0% {
     background: #2cdc2c; } }
 
-section {
-  float: left;
-  width: 33.333333%;
-  height: 300px;
-  -webkit-transition: all 0.4s; }
+@-webkit-keyframes Floating {
+  from {
+    -webkit-transform: translate(0, 0px); }
 
-.intro {
-  background-color: rgba(0, 0, 0, 0.1); }
+  55% {
+    -webkit-transform: translate(0, 10px); }
+
+  to {
+    -webkit-transform: translate(0, 0px); } }
+
+@-moz-keyframes Floating {
+  from {
+    -moz-transform: translate(0, 0px); }
+
+  55% {
+    -moz-transform: translate(0, 10px); }
+
+  to {
+    -moz-transform: translate(0, 0px); } }
+
+body {
+  background: url("../images/texturetastic_gray.png");
+  font-family: Arial, sans-serif; }
 
 .logo {
+  -webkit-animation-name: Floating;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating;
+  -moz-animation-duration: 3s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  background-color: #FFF;
+  border-radius: 3%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   margin: 20px auto;
-  width: 40%; }
+  padding: 1%;
+  position: relative;
+  width: 20%; }
+  .logo:before {
+    color: #FFF;
+    content: "◥";
+    font-family: Helvetica, "DejaVu Sans", "Arial Unicode MS", "Lucida Sans Unicode", sans-serif;
+    font-size: 46px;
+    line-height: 1;
+    position: absolute;
+    bottom: -35px;
+    right: 22%;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    clip: rect(11px, 100px, 100px, 0px); }
   .logo span {
     background: #007766;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -421,25 +468,3 @@ section {
       background: #2cdc2c;
       -moz-animation: anim-9 3s infinite alternate linear;
       -webkit-animation: anim-9 3s infinite alternate linear; }
-
-.haiku {
-  background-color: rgba(0, 0, 0, 0.2);
-  width: 66.666666%; }
-
-.portfolio-thumbnails {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.portfolio-detail {
-  background-color: rgba(0, 0, 0, 0.4); }
-
-.portfolio-description {
-  background-color: rgba(0, 0, 0, 0.5); }
-
-.blog {
-  background-color: rgba(0, 0, 0, 0.6); }
-
-.about {
-  background-color: rgba(0, 0, 0, 0.7); }
-
-.contact {
-  background-color: rgba(0, 0, 0, 0.8); }
