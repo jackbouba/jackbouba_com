@@ -130,10 +130,7 @@ $bg2: #22CC22;
 }
 
 // STYLES
-html {
-  height: 100%;
-}
-body {
+header {
   background: #944b40 url('../images/noise.png');
   background-image: url('../images/noise.png'), 
                     -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #61839e), color-stop(100%, #b52908));
@@ -146,8 +143,8 @@ body {
   background-image: url('../images/noise.png'),
                     linear-gradient(#61839e, #b52908);
   font-family: Arial, sans-serif;
+  padding: 60px 0;
   position: relative;
-  height: 100%;
   &:before {
     background-color: rgba(0,0,0,0);
     content: " ";
