@@ -17,6 +17,11 @@ $bg2: #22CC22;
   }
 }
 
+//@-webkit-keyframes sunset {
+//  0%   { background-position: 0 0, 0 0; } 
+//  100% { background-position: 0 0, 0 -100px; }
+//}
+
 @-webkit-keyframes anim-1 {
   0%   { background: $bg; } 
   100% { background: lighten($bg2, 5%); }
@@ -125,10 +130,27 @@ $bg2: #22CC22;
 }
 
 // STYLES
-
+html {
+  height: 100%;
+}
 body {
-  background: url('../images/texturetastic_gray.png');
+  background: #944b40 url('../images/noise.png');
+  background-image: url('../images/noise.png'), 
+                    -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #61839e), color-stop(100%, #b52908));
+  background-image: url('../images/noise.png'),
+                    -webkit-linear-gradient(#61839e, #b52908);
+  background-image: url('../images/noise.png'), 
+                    -moz-linear-gradient(#61839e, #b52908);
+  background-image: url('../images/noise.png'), 
+                    -o-linear-gradient(#61839e, #b52908);
+  background-image: url('../images/noise.png'),
+                    linear-gradient(#61839e, #b52908);
   font-family: Arial, sans-serif;
+  height: 100%;
+//  -webkit-animation-name: sunset;
+//  -webkit-animation-duration: 3s;
+//  -webkit-animation-iteration-count: infinite;
+//  -webkit-animation-timing-function: ease-in-out;
 }
 
 .logo {

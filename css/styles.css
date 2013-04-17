@@ -314,9 +314,18 @@ textarea {
   to {
     -moz-transform: translate(0, 0px); } }
 
+html {
+  height: 100%; }
+
 body {
-  background: url("../images/texturetastic_gray.png");
-  font-family: Arial, sans-serif; }
+  background: #944b40 url("../images/noise.png");
+  background-image: url("../images/noise.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #61839e), color-stop(100%, #b52908));
+  background-image: url("../images/noise.png"), -webkit-linear-gradient(#61839e, #b52908);
+  background-image: url("../images/noise.png"), -moz-linear-gradient(#61839e, #b52908);
+  background-image: url("../images/noise.png"), -o-linear-gradient(#61839e, #b52908);
+  background-image: url("../images/noise.png"), linear-gradient(#61839e, #b52908);
+  font-family: Arial, sans-serif;
+  height: 100%; }
 
 .logo {
   -webkit-animation-name: Floating;
