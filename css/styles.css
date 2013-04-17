@@ -168,6 +168,13 @@ textarea {
   clear: both;
   height: 0; }
 
+@-webkit-keyframes sunset {
+  0% {
+    background-color: rgba(0, 0, 0, 0); }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.75); } }
+
 @-webkit-keyframes anim-1 {
   0% {
     background: #007766; }
@@ -325,7 +332,18 @@ body {
   background-image: url("../images/noise.png"), -o-linear-gradient(#61839e, #b52908);
   background-image: url("../images/noise.png"), linear-gradient(#61839e, #b52908);
   font-family: Arial, sans-serif;
+  position: relative;
   height: 100%; }
+  body:before {
+    background-color: rgba(0, 0, 0, 0);
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -moz-animation: sunset 30s forwards linear;
+    -webkit-animation: sunset 30s forwards linear; }
 
 .logo {
   -webkit-animation-name: Floating;
