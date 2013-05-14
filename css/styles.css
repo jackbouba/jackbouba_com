@@ -1,49 +1,67 @@
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
+/* line 9, scss/main.scss */
 html,
 button,
 input,
 select,
 textarea {
-  color: #222; }
+  color: #222;
+}
 
+/* line 13, scss/main.scss */
 body {
   font-size: 1em;
-  line-height: 1.4; }
+  line-height: 1.4;
+}
 
+/* line 18, scss/main.scss */
 ::-moz-selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
+/* line 23, scss/main.scss */
 ::selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
+/* line 28, scss/main.scss */
 hr {
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #cccccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
+/* line 37, scss/main.scss */
 img {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
+/* line 41, scss/main.scss */
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
+/* line 47, scss/main.scss */
 textarea {
-  resize: vertical; }
+  resize: vertical;
+}
 
+/* line 51, scss/main.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0; }
+  padding: 0.2em 0;
+}
 
 /* ==========================================================================
    Author's custom styles
@@ -54,22 +72,29 @@ textarea {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+/* line 96, scss/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
   overflow: hidden;
-  *text-indent: -9999px; }
+  *text-indent: -9999px;
+}
 
+/* line 103, scss/main.scss */
 .ir:before {
   content: "";
   display: block;
   width: 0;
-  height: 150%; }
+  height: 150%;
+}
 
+/* line 110, scss/main.scss */
 .hidden {
   display: none !important;
-  visibility: hidden; }
+  visibility: hidden;
+}
 
+/* line 115, scss/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -78,8 +103,10 @@ textarea {
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px; }
+  width: 1px;
+}
 
+/* line 127, scss/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -87,261 +114,449 @@ textarea {
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto; }
+  width: auto;
+}
 
+/* line 136, scss/main.scss */
 .invisible {
-  visibility: hidden; }
+  visibility: hidden;
+}
 
+/* line 141, scss/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
-  display: table; }
+  display: table;
+}
 
+/* line 146, scss/main.scss */
 .clearfix:after {
-  clear: both; }
+  clear: both;
+}
 
+/* line 150, scss/main.scss */
 .clearfix {
-  *zoom: 1; }
+  *zoom: 1;
+}
 
 /* ==========================================================================
    Print styles
    ========================================================================== */
 @media print {
+  /* line 159, scss/main.scss */
   * {
     background: transparent !important;
     color: black !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
-    text-shadow: none !important; }
+    text-shadow: none !important;
+  }
 
+  /* line 167, scss/main.scss */
   a,
   a:visited {
-    text-decoration: underline; }
+    text-decoration: underline;
+  }
 
+  /* line 171, scss/main.scss */
   a[href]:after {
-    content: " (" attr(href) ")"; }
+    content: " (" attr(href) ")";
+  }
 
+  /* line 175, scss/main.scss */
   abbr[title]:after {
-    content: " (" attr(title) ")"; }
+    content: " (" attr(title) ")";
+  }
 
   /*
    * Don't show links for images, or javascript/internal links
    */
+  /* line 185, scss/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
-    content: ""; }
+    content: "";
+  }
 
+  /* line 190, scss/main.scss */
   pre,
   blockquote {
     border: 1px solid #999999;
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
+  /* line 195, scss/main.scss */
   thead {
     display: table-header-group;
-    /* h5bp.com/t */ }
+    /* h5bp.com/t */
+  }
 
+  /* line 200, scss/main.scss */
   tr,
   img {
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
+  /* line 204, scss/main.scss */
   img {
-    max-width: 100% !important; }
+    max-width: 100% !important;
+  }
 
   @page {
-    margin: 0.5cm; }
+    margin: 0.5cm;
+}
 
+  /* line 214, scss/main.scss */
   p,
   h2,
   h3 {
     orphans: 3;
-    widows: 3; }
+    widows: 3;
+  }
 
+  /* line 220, scss/main.scss */
   h2,
   h3 {
-    page-break-after: avoid; } }
-.logo:after {
+    page-break-after: avoid;
+  }
+}
+/* line 19, scss/styles.scss */
+.container:after, .logo:after {
   visibility: hidden;
   display: block;
   font-size: 0;
   content: " ";
   clear: both;
-  height: 0; }
+  height: 0;
+}
 
 @-webkit-keyframes sunset {
+  /* line 30, scss/styles.scss */
   0% {
-    background-color: rgba(0, 0, 0, 0); }
+    background-color: rgba(0, 0, 0, 0);
+  }
 
+  /* line 31, scss/styles.scss */
   100% {
-    background-color: rgba(0, 0, 0, 0.75); } }
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
 
 @-webkit-keyframes anim-1 {
+  /* line 35, scss/styles.scss */
   0% {
-    background: #007766; }
+    background: #007766;
+  }
 
+  /* line 36, scss/styles.scss */
   100% {
-    background: #2cdc2c; } }
+    background: #2cdc2c;
+  }
+}
 
 @-moz-keyframes anim-1 {
+  /* line 40, scss/styles.scss */
   0% {
-    background: #007766; }
+    background: #007766;
+  }
 
+  /* line 41, scss/styles.scss */
   100% {
-    background: #2cdc2c; } }
+    background: #2cdc2c;
+  }
+}
 
 @-webkit-keyframes anim-2 {
+  /* line 45, scss/styles.scss */
   0% {
-    background: #00917c; }
+    background: #00917c;
+  }
 
+  /* line 46, scss/styles.scss */
   100% {
-    background: #42df42; } }
+    background: #42df42;
+  }
+}
 
 @-moz-keyframes anim-2 {
+  /* line 50, scss/styles.scss */
   0% {
-    background: #00917c; }
+    background: #00917c;
+  }
 
+  /* line 51, scss/styles.scss */
   100% {
-    background: #42df42; } }
+    background: #42df42;
+  }
+}
 
 @-webkit-keyframes anim-3 {
+  /* line 55, scss/styles.scss */
   0% {
-    background: #00aa92; }
+    background: #00aa92;
+  }
 
+  /* line 56, scss/styles.scss */
   100% {
-    background: #57e357; } }
+    background: #57e357;
+  }
+}
 
 @-moz-keyframes anim-3 {
+  /* line 60, scss/styles.scss */
   0% {
-    background: #00aa92; }
+    background: #00aa92;
+  }
 
+  /* line 61, scss/styles.scss */
   100% {
-    background: #57e357; } }
+    background: #57e357;
+  }
+}
 
 @-webkit-keyframes anim-4 {
+  /* line 65, scss/styles.scss */
   0% {
-    background: #00c3a8; }
+    background: #00c3a8;
+  }
 
+  /* line 66, scss/styles.scss */
   100% {
-    background: #6de76d; } }
+    background: #6de76d;
+  }
+}
 
 @-moz-keyframes anim-4 {
+  /* line 70, scss/styles.scss */
   0% {
-    background: #00c3a8; }
+    background: #00c3a8;
+  }
 
+  /* line 71, scss/styles.scss */
   100% {
-    background: #6de76d; } }
+    background: #6de76d;
+  }
+}
 
 @-webkit-keyframes anim-5 {
+  /* line 75, scss/styles.scss */
   0% {
-    background: #83ea83; }
+    background: #83ea83;
+  }
 
+  /* line 76, scss/styles.scss */
   100% {
-    background: #00ddbd; } }
+    background: #00ddbd;
+  }
+}
 
 @-moz-keyframes anim-5 {
+  /* line 80, scss/styles.scss */
   0% {
-    background: #83ea83; }
+    background: #83ea83;
+  }
 
+  /* line 81, scss/styles.scss */
   100% {
-    background: #00ddbd; } }
+    background: #00ddbd;
+  }
+}
 
 @-webkit-keyframes anim-6 {
+  /* line 85, scss/styles.scss */
   100% {
-    background: #00c3a8; }
+    background: #00c3a8;
+  }
 
+  /* line 86, scss/styles.scss */
   0% {
-    background: #6de76d; } }
+    background: #6de76d;
+  }
+}
 
 @-moz-keyframes anim-6 {
+  /* line 90, scss/styles.scss */
   100% {
-    background: #00c3a8; }
+    background: #00c3a8;
+  }
 
+  /* line 91, scss/styles.scss */
   0% {
-    background: #6de76d; } }
+    background: #6de76d;
+  }
+}
 
 @-webkit-keyframes anim-7 {
+  /* line 95, scss/styles.scss */
   100% {
-    background: #00aa92; }
+    background: #00aa92;
+  }
 
+  /* line 96, scss/styles.scss */
   0% {
-    background: #57e357; } }
+    background: #57e357;
+  }
+}
 
 @-moz-keyframes anim-7 {
+  /* line 100, scss/styles.scss */
   100% {
-    background: #00aa92; }
+    background: #00aa92;
+  }
 
+  /* line 101, scss/styles.scss */
   0% {
-    background: #57e357; } }
+    background: #57e357;
+  }
+}
 
 @-webkit-keyframes anim-8 {
+  /* line 105, scss/styles.scss */
   100% {
-    background: #00917c; }
+    background: #00917c;
+  }
 
+  /* line 106, scss/styles.scss */
   0% {
-    background: #42df42; } }
+    background: #42df42;
+  }
+}
 
 @-moz-keyframes anim-8 {
+  /* line 110, scss/styles.scss */
   100% {
-    background: #00917c; }
+    background: #00917c;
+  }
 
+  /* line 111, scss/styles.scss */
   0% {
-    background: #42df42; } }
+    background: #42df42;
+  }
+}
 
 @-webkit-keyframes anim-9 {
+  /* line 115, scss/styles.scss */
   100% {
-    background: #007766; }
+    background: #007766;
+  }
 
+  /* line 116, scss/styles.scss */
   0% {
-    background: #2cdc2c; } }
+    background: #2cdc2c;
+  }
+}
 
 @-moz-keyframes anim-9 {
+  /* line 120, scss/styles.scss */
   100% {
-    background: #007766; }
+    background: #007766;
+  }
 
+  /* line 121, scss/styles.scss */
   0% {
-    background: #2cdc2c; } }
+    background: #2cdc2c;
+  }
+}
 
 @-webkit-keyframes Floating {
+  /* line 125, scss/styles.scss */
   from {
-    -webkit-transform: translate(0, 0px); }
+    -webkit-transform: translate(0, 0px);
+  }
 
+  /* line 126, scss/styles.scss */
   55% {
-    -webkit-transform: translate(0, 10px); }
+    -webkit-transform: translate(0, 10px);
+  }
 
+  /* line 127, scss/styles.scss */
   to {
-    -webkit-transform: translate(0, 0px); } }
+    -webkit-transform: translate(0, 0px);
+  }
+}
 
 @-moz-keyframes Floating {
+  /* line 131, scss/styles.scss */
   from {
-    -moz-transform: translate(0, 0px); }
+    -moz-transform: translate(0, 0px);
+  }
 
+  /* line 132, scss/styles.scss */
   55% {
-    -moz-transform: translate(0, 10px); }
+    -moz-transform: translate(0, 10px);
+  }
 
+  /* line 133, scss/styles.scss */
   to {
-    -moz-transform: translate(0, 0px); } }
+    -moz-transform: translate(0, 0px);
+  }
+}
 
+/* line 156, scss/styles.scss */
+body {
+  color: #FFF;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+/* line 161, scss/styles.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+/* line 164, scss/styles.scss */
+hr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  height: 0;
+}
+
+/* line 168, scss/styles.scss */
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* line 173, scss/styles.scss */
+.left-half {
+  float: left;
+  width: 50%;
+}
+
+/* line 177, scss/styles.scss */
+.right-half {
+  float: right;
+  text-align: right;
+  width: 30%;
+}
+
+/* line 186, scss/styles.scss */
 header {
   background: #944b40 url("../images/noise.png");
-  background-image: url("../images/noise.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #61839e), color-stop(100%, #b52908));
-  background-image: url("../images/noise.png"), -webkit-linear-gradient(#61839e, #b52908);
-  background-image: url("../images/noise.png"), -moz-linear-gradient(#61839e, #b52908);
-  background-image: url("../images/noise.png"), -o-linear-gradient(#61839e, #b52908);
-  background-image: url("../images/noise.png"), linear-gradient(#61839e, #b52908);
-  font-family: Arial, sans-serif;
-  padding: 60px 0;
-  position: relative; }
-  header:before {
-    background-color: rgba(0, 0, 0, 0);
-    content: " ";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    -moz-animation: sunset 30s forwards linear;
-    -webkit-animation: sunset 30s forwards linear; }
+  background: url("../images/noise.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #61839e), color-stop(100%, #b52908));
+  background: url("../images/noise.png"), -webkit-linear-gradient(#61839e, #b52908);
+  background: url("../images/noise.png"), -moz-linear-gradient(#61839e, #b52908);
+  background: url("../images/noise.png"), -o-linear-gradient(#61839e, #b52908);
+  background: url("../images/noise.png"), linear-gradient(#61839e, #b52908);
+  padding: 30px 0;
+  position: relative;
+}
+/* line 192, scss/styles.scss */
+header:before {
+  background-color: rgba(0, 0, 0, 0);
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
+/* line 205, scss/styles.scss */
+h1 {
+  font-size: 1em;
+}
+
+/* line 209, scss/styles.scss */
 .logo {
   -webkit-animation-name: Floating;
   -webkit-animation-duration: 3s;
@@ -353,142 +568,199 @@ header {
   -moz-animation-timing-function: ease-in-out;
   background-color: #FFF;
   border-radius: 3%;
+  -webkit-border-radius: 3%;
+  -moz-border-radius: 3%;
+  -ms-border-radius: 3%;
+  -o-border-radius: 3%;
+  border-radius: 3%;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  float: right;
   margin: 20px auto;
   padding: 1%;
   position: relative;
-  width: 20%; }
-  .logo:before {
-    color: #FFF;
-    content: "◥";
-    font-family: Helvetica, "DejaVu Sans", "Arial Unicode MS", "Lucida Sans Unicode", sans-serif;
-    font-size: 46px;
-    line-height: 1;
-    position: absolute;
-    bottom: -35px;
-    right: 22%;
-    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-    clip: rect(11px, 100px, 100px, 0px); }
-  .logo span {
-    background: #007766;
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
-    float: left;
-    overflow: hidden;
-    padding-bottom: 33.333333%;
-    position: relative;
-    width: 33.33333%;
-    height: 0;
-    text-indent: -99999px; }
-    .logo span:before, .logo span:after {
-      background: white;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-      content: " ";
-      position: absolute; }
-    .logo span b:before, .logo span b:after {
-      background: white;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-      content: " ";
-      position: absolute; }
-    .logo span.j {
-      -moz-animation: anim-1 3s infinite alternate linear;
-      -webkit-animation: anim-1 3s infinite alternate linear; }
-      .logo span.j:before {
-        top: 0;
-        left: 0;
-        width: 10%;
-        height: 20%; }
-    .logo span.a {
-      -moz-animation: anim-2 3s infinite alternate linear;
-      -webkit-animation: anim-2 3s infinite alternate linear; }
-    .logo span.a, .logo span.aa {
-      background: #00917c; }
-      .logo span.a:before, .logo span.aa:before {
-        margin-left: -5%;
-        bottom: 0;
-        left: 50%;
-        width: 10%;
-        height: 20%; }
-      .logo span.a:after, .logo span.aa:after {
-        margin-left: -5%;
-        bottom: 50%;
-        left: 50%;
-        width: 10%;
-        height: 10%; }
-    .logo span.c {
-      background: #00aa92;
-      -moz-animation: anim-3 3s infinite alternate linear;
-      -webkit-animation: anim-3 3s infinite alternate linear; }
-      .logo span.c:before {
-        margin-top: -10%;
-        top: 50%;
-        right: 0;
-        width: 10%;
-        height: 20%; }
-    .logo span.k {
-      background: #00c3a8;
-      -moz-animation: anim-4 3s infinite alternate linear;
-      -webkit-animation: anim-4 3s infinite alternate linear; }
-      .logo span.k:before {
-        margin-top: -5%;
-        top: 50%;
-        right: 0;
-        width: 10%;
-        height: 10%; }
-      .logo span.k:after {
-        margin-right: -5%;
-        top: 0;
-        right: 50%;
-        width: 10%;
-        height: 10%; }
-      .logo span.k b:before {
-        margin-right: -5%;
-        bottom: 0;
-        right: 50%;
-        width: 10%;
-        height: 10%; }
-    .logo span.b {
-      -moz-animation: anim-5 3s infinite alternate linear;
-      -webkit-animation: anim-5 3s infinite alternate linear; }
-    .logo span.b, .logo span.bb {
-      background: #83ea83; }
-      .logo span.b:before, .logo span.bb:before {
-        margin-right: -5%;
-        bottom: 25%;
-        right: 50%;
-        width: 10%;
-        height: 10%; }
-      .logo span.b:after, .logo span.bb:after {
-        margin-right: -5%;
-        top: 25%;
-        right: 50%;
-        width: 10%;
-        height: 10%; }
-    .logo span.o {
-      background: #6de76d;
-      -moz-animation: anim-6 3s infinite alternate linear;
-      -webkit-animation: anim-6 3s infinite alternate linear; }
-      .logo span.o:before {
-        margin-top: -10%;
-        margin-right: -5%;
-        top: 50%;
-        right: 50%;
-        width: 10%;
-        height: 20%; }
-    .logo span.u {
-      background: #57e357;
-      -moz-animation: anim-7 3s infinite alternate linear;
-      -webkit-animation: anim-7 3s infinite alternate linear; }
-      .logo span.u:before {
-        margin-right: -5%;
-        top: 0;
-        right: 50%;
-        width: 10%;
-        height: 20%; }
-    .logo span.bb {
-      background: #42df42;
-      -moz-animation: anim-8 3s infinite alternate linear;
-      -webkit-animation: anim-8 3s infinite alternate linear; }
-    .logo span.aa {
-      background: #2cdc2c;
-      -moz-animation: anim-9 3s infinite alternate linear;
-      -webkit-animation: anim-9 3s infinite alternate linear; }
+  width: 60%;
+}
+/* line 228, scss/styles.scss */
+.logo:before {
+  color: #FFF;
+  content: "◥";
+  font-family: Helvetica, "DejaVu Sans", "Arial Unicode MS", "Lucida Sans Unicode", sans-serif;
+  font-size: 46px;
+  line-height: 1;
+  position: absolute;
+  bottom: -35px;
+  right: 22%;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  clip: rect(11px, 100px, 100px, 0px);
+}
+/* line 246, scss/styles.scss */
+.logo span {
+  background: #007766;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+  float: left;
+  overflow: hidden;
+  padding-bottom: 33.333333%;
+  position: relative;
+  width: 33.33333%;
+  height: 0;
+  text-indent: -99999px;
+}
+/* line 256, scss/styles.scss */
+.logo span:before, .logo span:after {
+  background: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  content: " ";
+  position: absolute;
+  width: 10%;
+}
+/* line 264, scss/styles.scss */
+.logo span b:before, .logo span b:after {
+  background: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  content: " ";
+  position: absolute;
+}
+/* line 271, scss/styles.scss */
+.logo span.j {
+  -moz-animation: anim-1 3s infinite alternate linear;
+  -webkit-animation: anim-1 3s infinite alternate linear;
+}
+/* line 273, scss/styles.scss */
+.logo span.j:before {
+  top: 0;
+  left: 0;
+  height: 20%;
+}
+/* line 279, scss/styles.scss */
+.logo span.a {
+  -moz-animation: anim-2 3s infinite alternate linear;
+  -webkit-animation: anim-2 3s infinite alternate linear;
+}
+/* line 282, scss/styles.scss */
+.logo span.a, .logo span.aa {
+  background: #00917c;
+}
+/* line 284, scss/styles.scss */
+.logo span.a:before, .logo span.aa:before {
+  margin-left: -5%;
+  bottom: 0;
+  left: 50%;
+  height: 20%;
+}
+/* line 290, scss/styles.scss */
+.logo span.a:after, .logo span.aa:after {
+  margin-left: -5%;
+  bottom: 50%;
+  left: 50%;
+  height: 10%;
+}
+/* line 297, scss/styles.scss */
+.logo span.c {
+  background: #00aa92;
+  -moz-animation: anim-3 3s infinite alternate linear;
+  -webkit-animation: anim-3 3s infinite alternate linear;
+}
+/* line 300, scss/styles.scss */
+.logo span.c:before {
+  margin-top: -10%;
+  top: 50%;
+  right: 0;
+  height: 20%;
+}
+/* line 307, scss/styles.scss */
+.logo span.k {
+  background: #00c3a8;
+  -moz-animation: anim-4 3s infinite alternate linear;
+  -webkit-animation: anim-4 3s infinite alternate linear;
+}
+/* line 310, scss/styles.scss */
+.logo span.k:before {
+  margin-top: -5%;
+  top: 50%;
+  right: 0;
+  height: 10%;
+}
+/* line 316, scss/styles.scss */
+.logo span.k:after {
+  margin-right: -5%;
+  top: 0;
+  right: 50%;
+  height: 10%;
+}
+/* line 323, scss/styles.scss */
+.logo span.k b:before {
+  margin-right: -5%;
+  bottom: 0;
+  right: 50%;
+  height: 10%;
+}
+/* line 331, scss/styles.scss */
+.logo span.b {
+  -moz-animation: anim-5 3s infinite alternate linear;
+  -webkit-animation: anim-5 3s infinite alternate linear;
+}
+/* line 334, scss/styles.scss */
+.logo span.b, .logo span.bb {
+  background: #83ea83;
+}
+/* line 336, scss/styles.scss */
+.logo span.b:before, .logo span.bb:before {
+  margin-right: -5%;
+  bottom: 25%;
+  right: 50%;
+  height: 10%;
+}
+/* line 342, scss/styles.scss */
+.logo span.b:after, .logo span.bb:after {
+  margin-right: -5%;
+  top: 25%;
+  right: 50%;
+  height: 10%;
+}
+/* line 349, scss/styles.scss */
+.logo span.o {
+  background: #6de76d;
+  -moz-animation: anim-6 3s infinite alternate linear;
+  -webkit-animation: anim-6 3s infinite alternate linear;
+}
+/* line 352, scss/styles.scss */
+.logo span.o:before {
+  margin-top: -10%;
+  margin-right: -5%;
+  top: 50%;
+  right: 50%;
+  height: 20%;
+}
+/* line 360, scss/styles.scss */
+.logo span.u {
+  background: #57e357;
+  -moz-animation: anim-7 3s infinite alternate linear;
+  -webkit-animation: anim-7 3s infinite alternate linear;
+}
+/* line 363, scss/styles.scss */
+.logo span.u:before {
+  margin-right: -5%;
+  top: 0;
+  right: 50%;
+  height: 20%;
+}
+/* line 370, scss/styles.scss */
+.logo span.bb {
+  background: #42df42;
+  -moz-animation: anim-8 3s infinite alternate linear;
+  -webkit-animation: anim-8 3s infinite alternate linear;
+}
+/* line 374, scss/styles.scss */
+.logo span.aa {
+  background: #2cdc2c;
+  -moz-animation: anim-9 3s infinite alternate linear;
+  -webkit-animation: anim-9 3s infinite alternate linear;
+}

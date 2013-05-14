@@ -1,11 +1,20 @@
+@import "compass";
 @import "main";
 
+// ================================================================== \\
 // VARIABLES
+// ================================================================== //
 $bg: #007766;
 $bg2: #22CC22;
 
-// MIXINS ET AL
+$default-box-shadow-color: rgba(0,0,0,.2);
+$default-box-shadow-h-offset: 0;
+$default-box-shadow-v-offset: 0;
+$default-box-shadow-blur: 10px;  
 
+// ================================================================== \\
+// MIXINS ET AL
+// ================================================================== //
 %selfclear {
   &:after {
     visibility: hidden;
@@ -112,13 +121,13 @@ $bg2: #22CC22;
   0% { background: lighten($bg2, 5%); }
 }
 
-@-webkit-keyframes Floating{
+@-webkit-keyframes Floating {
   from {-webkit-transform:translate(0, 0px); }
   55% {-webkit-transform:translate(0, 10px); }
   to {-webkit-transform: translate(0, -0px); }    
 }
     
-@-moz-keyframes Floating{
+@-moz-keyframes Floating {
   from {-moz-transform:translate(0, 0px); }
   55% {-moz-transform:translate(0, 10px); }
   to {-moz-transform: translate(0, -0px); }    
@@ -129,21 +138,56 @@ $bg2: #22CC22;
   -webkit-animation: $anim-name 3s infinite alternate linear;
 }
 
-// STYLES
+%button-base {
+  @inlude single-text-shadow(1px 1px 0 0 rgba(0,0,0,.25));
+  color: #FFF;
+  display: inline-block;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+@mixin button($btn-bg) {
+  @extend %button-base;
+  background-color: $btn-bg;
+}
+
+// ================================================================== \\
+// GLOBAL STYLES
+// ================================================================== //
+body {
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 400;
+}
+hr {
+  border-bottom: 1px solid rgba(0,0,0,.3);
+  height: 0;
+}
+.container {
+  @extend %selfclear;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.left-half {
+  float: left;
+  width: 50%;
+}
+.right-half {
+  float: right;
+  text-align: right;
+  width: 30%;
+}
+
+// ================================================================== \\
+// HEADER STYLES
+// ================================================================== //
 header {
   background: #944b40 url('../images/noise.png');
-  background-image: url('../images/noise.png'), 
-                    -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #61839e), color-stop(100%, #b52908));
-  background-image: url('../images/noise.png'),
-                    -webkit-linear-gradient(#61839e, #b52908);
-  background-image: url('../images/noise.png'), 
-                    -moz-linear-gradient(#61839e, #b52908);
-  background-image: url('../images/noise.png'), 
-                    -o-linear-gradient(#61839e, #b52908);
-  background-image: url('../images/noise.png'),
-                    linear-gradient(#61839e, #b52908);
-  font-family: Arial, sans-serif;
-  padding: 60px 0;
+  @include background(url('../images/noise.png'),
+                      linear-gradient(#61839e, #b52908));
+  padding: 30px 0;
   position: relative;
   &:before {
     background-color: rgba(0,0,0,0);
@@ -153,9 +197,13 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    -moz-animation: sunset 30s forwards linear;
-    -webkit-animation: sunset 30s forwards linear;
+  //  -moz-animation: sunset 30s forwards linear;
+  //  -webkit-animation: sunset 30s forwards linear;
   }
+}
+
+h1 {
+  font-size: 1em;
 }
 
 .logo {
@@ -170,11 +218,13 @@ header {
   -moz-animation-timing-function: ease-in-out;
   background-color: #FFF;
   border-radius: 3%;
-  box-shadow: 0 0 30px rgba(0,0,0,.3);
+  @include border-radius(3%);
+  @include box-shadow(0 0 30px rgba(0,0,0,.3));
+  float: right;
   margin: 20px auto;
   padding: 1%;
   position: relative;
-  width: 20%;
+  width: 60%;
   &:before {
     color: #FFF;
   //  border-style: solid;
@@ -195,7 +245,7 @@ header {
 
   span {
     background: $bg;
-    box-shadow: inset 0px 0px 10px rgba(0,0,0,.2);
+    @include box-shadow(0 0 10px rgba(0,0,0,.2) inset);
     float: left;
     overflow: hidden;
     padding-bottom: 33.333333%;
@@ -205,14 +255,15 @@ header {
     text-indent: -99999px;
     &:before, &:after {
       background: rgba(255,255,255,1.0);
-      box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+      @include box-shadow;
       content: " ";
       position: absolute;
+      width: 10%;
     }
     b {
       &:before, &:after {
         background: rgba(255,255,255,1.0);
-        box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+        @include box-shadow;
         content: " ";
         position: absolute;
       }  
@@ -222,7 +273,6 @@ header {
       &:before {
         top: 0;
         left: 0;
-        width: 10%;
         height: 20%;
       }
     }
@@ -235,14 +285,12 @@ header {
         margin-left: -5%;
         bottom: 0;
         left: 50%;
-        width: 10%;
         height: 20%;
       }
       &:after {
         margin-left: -5%;
         bottom: 50%;
         left: 50%;
-        width: 10%;
         height: 10%;
       }
     }
@@ -253,7 +301,6 @@ header {
         margin-top: -10%;
         top: 50%;
         right: 0;
-        width: 10%;
         height: 20%;
       }
     }
@@ -264,14 +311,12 @@ header {
         margin-top: -5%;
         top: 50%;
         right: 0;
-        width: 10%;
         height: 10%;
       }  
         &:after {
         margin-right: -5%;
         top: 0;
         right: 50%;
-        width: 10%;
         height: 10%;
       }
       b {
@@ -279,7 +324,6 @@ header {
           margin-right: -5%;
           bottom: 0;
           right: 50%;
-          width: 10%;
           height: 10%;
         }    
       }    
@@ -293,14 +337,12 @@ header {
         margin-right: -5%;
         bottom: 25%;
         right: 50%;
-        width: 10%;
         height: 10%;
       }
       &:after {
         margin-right: -5%;
         top: 25%;
         right: 50%;
-        width: 10%;
         height: 10%;
       }
     } 
@@ -312,7 +354,6 @@ header {
         margin-right: -5%;
         top: 50%;
         right: 50%;
-        width: 10%;
         height: 20%;
       }    
     } 
@@ -323,7 +364,6 @@ header {
         margin-right: -5%;
         top: 0;
         right: 50%;
-        width: 10%;
         height: 20%;
       }    
     } 
