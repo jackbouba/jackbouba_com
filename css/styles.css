@@ -220,7 +220,7 @@ textarea {
     page-break-after: avoid;
   }
 }
-/* line 19, scss/styles.scss */
+/* line 21, scss/styles.scss */
 .container:after, .logo:after {
   visibility: hidden;
   display: block;
@@ -231,305 +231,327 @@ textarea {
 }
 
 @-webkit-keyframes sunset {
-  /* line 30, scss/styles.scss */
+  /* line 32, scss/styles.scss */
   0% {
     background-color: rgba(0, 0, 0, 0);
   }
 
-  /* line 31, scss/styles.scss */
+  /* line 33, scss/styles.scss */
   100% {
     background-color: rgba(0, 0, 0, 0.75);
   }
 }
 
 @-webkit-keyframes anim-1 {
-  /* line 35, scss/styles.scss */
+  /* line 37, scss/styles.scss */
   0% {
     background: #007766;
   }
 
-  /* line 36, scss/styles.scss */
+  /* line 38, scss/styles.scss */
   100% {
     background: #2cdc2c;
   }
 }
 
 @-moz-keyframes anim-1 {
-  /* line 40, scss/styles.scss */
+  /* line 42, scss/styles.scss */
   0% {
     background: #007766;
   }
 
-  /* line 41, scss/styles.scss */
+  /* line 43, scss/styles.scss */
   100% {
     background: #2cdc2c;
   }
 }
 
 @-webkit-keyframes anim-2 {
-  /* line 45, scss/styles.scss */
+  /* line 47, scss/styles.scss */
   0% {
     background: #00917c;
   }
 
-  /* line 46, scss/styles.scss */
+  /* line 48, scss/styles.scss */
   100% {
     background: #42df42;
   }
 }
 
 @-moz-keyframes anim-2 {
-  /* line 50, scss/styles.scss */
+  /* line 52, scss/styles.scss */
   0% {
     background: #00917c;
   }
 
-  /* line 51, scss/styles.scss */
+  /* line 53, scss/styles.scss */
   100% {
     background: #42df42;
   }
 }
 
 @-webkit-keyframes anim-3 {
-  /* line 55, scss/styles.scss */
+  /* line 57, scss/styles.scss */
   0% {
     background: #00aa92;
   }
 
-  /* line 56, scss/styles.scss */
+  /* line 58, scss/styles.scss */
   100% {
     background: #57e357;
   }
 }
 
 @-moz-keyframes anim-3 {
-  /* line 60, scss/styles.scss */
+  /* line 62, scss/styles.scss */
   0% {
     background: #00aa92;
   }
 
-  /* line 61, scss/styles.scss */
+  /* line 63, scss/styles.scss */
   100% {
     background: #57e357;
   }
 }
 
 @-webkit-keyframes anim-4 {
-  /* line 65, scss/styles.scss */
+  /* line 67, scss/styles.scss */
   0% {
     background: #00c3a8;
   }
 
-  /* line 66, scss/styles.scss */
+  /* line 68, scss/styles.scss */
   100% {
     background: #6de76d;
   }
 }
 
 @-moz-keyframes anim-4 {
-  /* line 70, scss/styles.scss */
+  /* line 72, scss/styles.scss */
   0% {
     background: #00c3a8;
   }
 
-  /* line 71, scss/styles.scss */
+  /* line 73, scss/styles.scss */
   100% {
     background: #6de76d;
   }
 }
 
 @-webkit-keyframes anim-5 {
-  /* line 75, scss/styles.scss */
+  /* line 77, scss/styles.scss */
   0% {
     background: #83ea83;
   }
 
-  /* line 76, scss/styles.scss */
+  /* line 78, scss/styles.scss */
   100% {
     background: #00ddbd;
   }
 }
 
 @-moz-keyframes anim-5 {
-  /* line 80, scss/styles.scss */
+  /* line 82, scss/styles.scss */
   0% {
     background: #83ea83;
   }
 
-  /* line 81, scss/styles.scss */
+  /* line 83, scss/styles.scss */
   100% {
     background: #00ddbd;
   }
 }
 
 @-webkit-keyframes anim-6 {
-  /* line 85, scss/styles.scss */
+  /* line 87, scss/styles.scss */
   100% {
     background: #00c3a8;
   }
 
-  /* line 86, scss/styles.scss */
+  /* line 88, scss/styles.scss */
   0% {
     background: #6de76d;
   }
 }
 
 @-moz-keyframes anim-6 {
-  /* line 90, scss/styles.scss */
+  /* line 92, scss/styles.scss */
   100% {
     background: #00c3a8;
   }
 
-  /* line 91, scss/styles.scss */
+  /* line 93, scss/styles.scss */
   0% {
     background: #6de76d;
   }
 }
 
 @-webkit-keyframes anim-7 {
-  /* line 95, scss/styles.scss */
+  /* line 97, scss/styles.scss */
   100% {
     background: #00aa92;
   }
 
-  /* line 96, scss/styles.scss */
+  /* line 98, scss/styles.scss */
   0% {
     background: #57e357;
   }
 }
 
 @-moz-keyframes anim-7 {
-  /* line 100, scss/styles.scss */
+  /* line 102, scss/styles.scss */
   100% {
     background: #00aa92;
   }
 
-  /* line 101, scss/styles.scss */
+  /* line 103, scss/styles.scss */
   0% {
     background: #57e357;
   }
 }
 
 @-webkit-keyframes anim-8 {
-  /* line 105, scss/styles.scss */
+  /* line 107, scss/styles.scss */
   100% {
     background: #00917c;
   }
 
-  /* line 106, scss/styles.scss */
+  /* line 108, scss/styles.scss */
   0% {
     background: #42df42;
   }
 }
 
 @-moz-keyframes anim-8 {
-  /* line 110, scss/styles.scss */
+  /* line 112, scss/styles.scss */
   100% {
     background: #00917c;
   }
 
-  /* line 111, scss/styles.scss */
+  /* line 113, scss/styles.scss */
   0% {
     background: #42df42;
   }
 }
 
 @-webkit-keyframes anim-9 {
-  /* line 115, scss/styles.scss */
+  /* line 117, scss/styles.scss */
   100% {
     background: #007766;
   }
 
-  /* line 116, scss/styles.scss */
+  /* line 118, scss/styles.scss */
   0% {
     background: #2cdc2c;
   }
 }
 
 @-moz-keyframes anim-9 {
-  /* line 120, scss/styles.scss */
+  /* line 122, scss/styles.scss */
   100% {
     background: #007766;
   }
 
-  /* line 121, scss/styles.scss */
+  /* line 123, scss/styles.scss */
   0% {
     background: #2cdc2c;
   }
 }
 
 @-webkit-keyframes Floating {
-  /* line 125, scss/styles.scss */
+  /* line 127, scss/styles.scss */
   from {
     -webkit-transform: translate(0, 0px);
   }
 
-  /* line 126, scss/styles.scss */
+  /* line 128, scss/styles.scss */
   55% {
     -webkit-transform: translate(0, 10px);
   }
 
-  /* line 127, scss/styles.scss */
+  /* line 129, scss/styles.scss */
   to {
     -webkit-transform: translate(0, 0px);
   }
 }
 
 @-moz-keyframes Floating {
-  /* line 131, scss/styles.scss */
+  /* line 133, scss/styles.scss */
   from {
     -moz-transform: translate(0, 0px);
   }
 
-  /* line 132, scss/styles.scss */
+  /* line 134, scss/styles.scss */
   55% {
     -moz-transform: translate(0, 10px);
   }
 
-  /* line 133, scss/styles.scss */
+  /* line 135, scss/styles.scss */
   to {
     -moz-transform: translate(0, 0px);
   }
 }
 
-/* line 156, scss/styles.scss */
-body {
+/* line 143, scss/styles.scss */
+.button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.25) 0px 1px #aaaaaa;
+  color: #FFF;
+  display: inline-block;
+  font-size: .75em;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 158, scss/styles.scss */
+.button {
+  background-color: #059777;
+  border-bottom: 4px solid #036650;
+}
+
+/* line 165, scss/styles.scss */
+body, pre {
   color: #FFF;
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
-/* line 161, scss/styles.scss */
+/* line 170, scss/styles.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-/* line 164, scss/styles.scss */
+/* line 173, scss/styles.scss */
 hr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   height: 0;
 }
 
-/* line 168, scss/styles.scss */
+/* line 177, scss/styles.scss */
 .container {
   margin: 0 auto;
   max-width: 1000px;
 }
 
-/* line 173, scss/styles.scss */
-.left-half {
+/* line 182, scss/styles.scss */
+.left-bit {
   float: left;
   width: 50%;
 }
 
-/* line 177, scss/styles.scss */
-.right-half {
+/* line 186, scss/styles.scss */
+.right-bit {
   float: right;
   text-align: right;
   width: 30%;
 }
 
-/* line 186, scss/styles.scss */
+/* line 195, scss/styles.scss */
 header {
   background: #944b40 url("../images/noise.png");
   background: url("../images/noise.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #61839e), color-stop(100%, #b52908));
@@ -540,7 +562,7 @@ header {
   padding: 30px 0;
   position: relative;
 }
-/* line 192, scss/styles.scss */
+/* line 201, scss/styles.scss */
 header:before {
   background-color: rgba(0, 0, 0, 0);
   content: " ";
@@ -551,12 +573,12 @@ header:before {
   right: 0;
 }
 
-/* line 205, scss/styles.scss */
+/* line 214, scss/styles.scss */
 h1 {
   font-size: 1em;
 }
 
-/* line 209, scss/styles.scss */
+/* line 218, scss/styles.scss */
 .logo {
   -webkit-animation-name: Floating;
   -webkit-animation-duration: 3s;
@@ -582,7 +604,7 @@ h1 {
   position: relative;
   width: 60%;
 }
-/* line 228, scss/styles.scss */
+/* line 237, scss/styles.scss */
 .logo:before {
   color: #FFF;
   content: "◥";
@@ -595,7 +617,7 @@ h1 {
   text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   clip: rect(11px, 100px, 100px, 0px);
 }
-/* line 246, scss/styles.scss */
+/* line 255, scss/styles.scss */
 .logo span {
   background: #007766;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
@@ -609,7 +631,7 @@ h1 {
   height: 0;
   text-indent: -99999px;
 }
-/* line 256, scss/styles.scss */
+/* line 265, scss/styles.scss */
 .logo span:before, .logo span:after {
   background: white;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -619,7 +641,7 @@ h1 {
   position: absolute;
   width: 10%;
 }
-/* line 264, scss/styles.scss */
+/* line 273, scss/styles.scss */
 .logo span b:before, .logo span b:after {
   background: white;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -628,110 +650,110 @@ h1 {
   content: " ";
   position: absolute;
 }
-/* line 271, scss/styles.scss */
+/* line 280, scss/styles.scss */
 .logo span.j {
   -moz-animation: anim-1 3s infinite alternate linear;
   -webkit-animation: anim-1 3s infinite alternate linear;
 }
-/* line 273, scss/styles.scss */
+/* line 282, scss/styles.scss */
 .logo span.j:before {
   top: 0;
   left: 0;
   height: 20%;
 }
-/* line 279, scss/styles.scss */
+/* line 288, scss/styles.scss */
 .logo span.a {
   -moz-animation: anim-2 3s infinite alternate linear;
   -webkit-animation: anim-2 3s infinite alternate linear;
 }
-/* line 282, scss/styles.scss */
+/* line 291, scss/styles.scss */
 .logo span.a, .logo span.aa {
   background: #00917c;
 }
-/* line 284, scss/styles.scss */
+/* line 293, scss/styles.scss */
 .logo span.a:before, .logo span.aa:before {
   margin-left: -5%;
   bottom: 0;
   left: 50%;
   height: 20%;
 }
-/* line 290, scss/styles.scss */
+/* line 299, scss/styles.scss */
 .logo span.a:after, .logo span.aa:after {
   margin-left: -5%;
   bottom: 50%;
   left: 50%;
   height: 10%;
 }
-/* line 297, scss/styles.scss */
+/* line 306, scss/styles.scss */
 .logo span.c {
   background: #00aa92;
   -moz-animation: anim-3 3s infinite alternate linear;
   -webkit-animation: anim-3 3s infinite alternate linear;
 }
-/* line 300, scss/styles.scss */
+/* line 309, scss/styles.scss */
 .logo span.c:before {
   margin-top: -10%;
   top: 50%;
   right: 0;
   height: 20%;
 }
-/* line 307, scss/styles.scss */
+/* line 316, scss/styles.scss */
 .logo span.k {
   background: #00c3a8;
   -moz-animation: anim-4 3s infinite alternate linear;
   -webkit-animation: anim-4 3s infinite alternate linear;
 }
-/* line 310, scss/styles.scss */
+/* line 319, scss/styles.scss */
 .logo span.k:before {
   margin-top: -5%;
   top: 50%;
   right: 0;
   height: 10%;
 }
-/* line 316, scss/styles.scss */
+/* line 325, scss/styles.scss */
 .logo span.k:after {
   margin-right: -5%;
   top: 0;
   right: 50%;
   height: 10%;
 }
-/* line 323, scss/styles.scss */
+/* line 332, scss/styles.scss */
 .logo span.k b:before {
   margin-right: -5%;
   bottom: 0;
   right: 50%;
   height: 10%;
 }
-/* line 331, scss/styles.scss */
+/* line 340, scss/styles.scss */
 .logo span.b {
   -moz-animation: anim-5 3s infinite alternate linear;
   -webkit-animation: anim-5 3s infinite alternate linear;
 }
-/* line 334, scss/styles.scss */
+/* line 343, scss/styles.scss */
 .logo span.b, .logo span.bb {
   background: #83ea83;
 }
-/* line 336, scss/styles.scss */
+/* line 345, scss/styles.scss */
 .logo span.b:before, .logo span.bb:before {
   margin-right: -5%;
   bottom: 25%;
   right: 50%;
   height: 10%;
 }
-/* line 342, scss/styles.scss */
+/* line 351, scss/styles.scss */
 .logo span.b:after, .logo span.bb:after {
   margin-right: -5%;
   top: 25%;
   right: 50%;
   height: 10%;
 }
-/* line 349, scss/styles.scss */
+/* line 358, scss/styles.scss */
 .logo span.o {
   background: #6de76d;
   -moz-animation: anim-6 3s infinite alternate linear;
   -webkit-animation: anim-6 3s infinite alternate linear;
 }
-/* line 352, scss/styles.scss */
+/* line 361, scss/styles.scss */
 .logo span.o:before {
   margin-top: -10%;
   margin-right: -5%;
@@ -739,26 +761,26 @@ h1 {
   right: 50%;
   height: 20%;
 }
-/* line 360, scss/styles.scss */
+/* line 369, scss/styles.scss */
 .logo span.u {
   background: #57e357;
   -moz-animation: anim-7 3s infinite alternate linear;
   -webkit-animation: anim-7 3s infinite alternate linear;
 }
-/* line 363, scss/styles.scss */
+/* line 372, scss/styles.scss */
 .logo span.u:before {
   margin-right: -5%;
   top: 0;
   right: 50%;
   height: 20%;
 }
-/* line 370, scss/styles.scss */
+/* line 379, scss/styles.scss */
 .logo span.bb {
   background: #42df42;
   -moz-animation: anim-8 3s infinite alternate linear;
   -webkit-animation: anim-8 3s infinite alternate linear;
 }
-/* line 374, scss/styles.scss */
+/* line 383, scss/styles.scss */
 .logo span.aa {
   background: #2cdc2c;
   -moz-animation: anim-9 3s infinite alternate linear;
