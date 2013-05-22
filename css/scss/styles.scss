@@ -141,19 +141,28 @@ $green: #059777;
 }
 
 %button-base {
-  @include border-radius(5px);
-  @include single-text-shadow(1px 1px 0 0 rgba(0,0,0,.25)); 
+  @include border-radius(5px); 
   color: #FFF;
   display: inline-block;
   font-size: .75em;
   padding: 5px 10px;
   text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.25);
   text-transform: uppercase;
 }
 @mixin button($btn-bg) {
   @extend %button-base;
   background-color: $btn-bg;
-  border-bottom: 4px solid darken($btn-bg, 10%);
+  border-width: 0 0 4px 0;
+  border-color: darken($btn-bg, 10%); 
+  border-style: solid;
+  &:hover {
+    background-color: lighten($btn-bg, 2%);
+  }
+  &:active {
+    background-color: darken($btn-bg, 2%);
+    border-width: 3px 0 1px 0;
+  }
 }
 .button {
   @include button($green);
@@ -178,6 +187,7 @@ hr {
   @extend %selfclear;
   margin: 0 auto;
   max-width: 1000px;
+  position: relative;
 }
 .left-bit {
   float: left;
@@ -249,7 +259,7 @@ h1 {
   //  width: 0px;
   // height: 0px;
     text-shadow: 0 0 30px rgba(0,0,0,.3);
-    clip:rect(11px,100px,100px,0px);
+    clip:rect(11px,100px,100px,-100px);
   }
 
   span {
@@ -304,6 +314,7 @@ h1 {
       }
     }
     &.c {
+      @include border-top-right-radius(5px);
       background: lighten($bg, 10%);
       @include logo-animation(anim-3);
       &:before {
@@ -367,6 +378,7 @@ h1 {
       }    
     } 
     &.u {
+      @include border-bottom-left-radius(5px);
       background: lighten($bg2, 15%);
       @include logo-animation(anim-7);
       &:before {
@@ -381,6 +393,7 @@ h1 {
       @include logo-animation(anim-8);
     } 
     &.aa {
+      @include border-bottom-right-radius(5px);
       background: lighten($bg2, 5%);
       @include logo-animation(anim-9);
     }   
