@@ -1,4 +1,5 @@
 @import "compass";
+@import "normalize";
 @import "main";
 
 // ================================================================== \\
@@ -141,43 +142,92 @@ $green: #059777;
 }
 
 %button-base {
-  @include border-radius(5px); 
+  @include border-radius(3px); 
   color: #FFF;
   display: inline-block;
   font-size: .75em;
-  padding: 5px 10px;
+  padding: 8px 20px;
   text-decoration: none;
   text-shadow: 1px 1px 0 rgba(0,0,0,.25);
   text-transform: uppercase;
 }
 @mixin button($btn-bg) {
   @extend %button-base;
+  @include single-box-shadow(rgba(255,255,255,.3), 0, 1px, 0, 0, inset);
   background-color: $btn-bg;
-  border-width: 0 0 4px 0;
+  border-width: 1px 1px 4px;
   border-color: darken($btn-bg, 10%); 
   border-style: solid;
   &:hover {
     background-color: lighten($btn-bg, 2%);
   }
   &:active {
-    background-color: darken($btn-bg, 2%);
-    border-width: 3px 0 1px 0;
+    @include single-box-shadow(none);
+    background-color: darken($btn-bg, 4%);
+    border-width: 4px 1px 1px;
   }
 }
 .button {
   @include button($green);
 }
 
+[class^="cactus-"], [class^="cactus-"]:after {
+  background-color: rgba(0,0,0,.3);
+}
+.cactus-body {
+  position: absolute;
+  bottom: -30px;
+  width: 20px;
+  height: 160px;
+  transition: height 1s linear;
+  &:hover {
+    height: 190px;
+  }
+}
+.cactus-body, [class^="cactus-arm-"]:after {
+  border-radius: 10px 10px 0 0;
+}
+[class^="cactus-arm-"] {
+  width: 36px;
+  height: 18px;
+  &:after {
+    content: " ";
+  }
+}
+[class^="cactus-arm-"], [class^="cactus-arm-"]:after {
+  position: absolute;
+}
+[class^="cactus-arm-"]:after {
+  width: 16px;
+  height: 30px;
+}
+.cactus-arm-right {
+  border-radius: 0 0 10px 0;
+  left: 100%;
+  top: 70px;
+  &:after {
+    content: " ";
+    bottom: 100%;
+    right: 0;
+  }
+}
+.cactus-arm-left {
+  border-radius: 0 0 0 10px;
+  right: 100%;
+  top: 80px;
+  &:after {
+    bottom: 100%;
+  }
+}
+
 // ================================================================== \\
 // GLOBAL STYLES
 // ================================================================== //
-body, pre {
+body, pre, h1,h2,h3,h4,h5,h6 {
   color: #FFF;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-}
-h1,h2,h3,h4,h5,h6 {
-  font-weight: 400;
+  margin: 0
 }
 hr {
   border-bottom: 1px solid rgba(0,0,0,.3);
@@ -197,6 +247,17 @@ hr {
   float: right;
   text-align: right;
   width: 30%;
+}
+.bordered {
+  border-bottom: 1px solid rgba(255,255,255,.5);
+  border-top: 1px solid rgba(0,0,0,.3);
+  padding: 1em;
+  &:first-child {
+    border-top: 0;
+  }
+  &:last-child {
+    border-bottom: 0;
+  }
 }
 
 // ================================================================== \\
@@ -243,7 +304,7 @@ h1 {
   margin: 20px auto;
   padding: 1%;
   position: relative;
-  width: 60%;
+  width: 90%;
   &:before {
     color: #FFF;
   //  border-style: solid;
@@ -314,7 +375,7 @@ h1 {
       }
     }
     &.c {
-      @include border-top-right-radius(5px);
+      @include border-top-right-radius(6%);
       background: lighten($bg, 10%);
       @include logo-animation(anim-3);
       &:before {
@@ -378,7 +439,7 @@ h1 {
       }    
     } 
     &.u {
-      @include border-bottom-left-radius(5px);
+      @include border-bottom-left-radius(6%);
       background: lighten($bg2, 15%);
       @include logo-animation(anim-7);
       &:before {
@@ -393,9 +454,13 @@ h1 {
       @include logo-animation(anim-8);
     } 
     &.aa {
-      @include border-bottom-right-radius(5px);
+      @include border-bottom-right-radius(6%);
       background: lighten($bg2, 5%);
       @include logo-animation(anim-9);
     }   
   }
+}
+
+.haiku {
+  margin-bottom: 1em;
 }
