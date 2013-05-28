@@ -45,6 +45,10 @@
 }
 
 .cactus-1 {
+  @include single-box-shadow(rgba(255,100,100,0.15), -6px, 0, 12px, 0, inset);
+  .cactus-arm-right {
+    @include single-box-shadow(rgba(255,100,100,0.25), 20px, 0, 30px, -20px, inset);
+  }
   &:hover {
     height: 210px;
     + .cactus-body {
