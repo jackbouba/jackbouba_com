@@ -1,0 +1,96 @@
+[class^="cactus-"], [class^="cactus-arm-"]:after {
+  background: rgba(0,0,0,.7) url('../images/noise.png');
+}
+.cactus-body {
+  position: absolute;
+  bottom: -30px;
+  width: 20px;
+  height: 170px;
+  transition: height 1s linear;
+}
+.cactus-body, [class^="cactus-arm-"]:after {
+  border-radius: 10px 10px 0 0;
+}
+[class^="cactus-arm-"] {
+  width: 36px;
+  height: 18px;
+  &:after {
+    content: " ";
+  }
+}
+[class^="cactus-arm-"], [class^="cactus-arm-"]:after {
+  position: absolute;
+}
+[class^="cactus-arm-"]:after {
+  width: 16px;
+  height: 30px;
+}
+.cactus-arm-right {
+  border-radius: 0 0 10px 0;
+  left: 100%;
+  top: 70px;
+  &:after {
+    content: " ";
+    bottom: 100%;
+    right: 0;
+  }
+}
+.cactus-arm-left {
+  border-radius: 0 0 0 10px;
+  right: 100%;
+  top: 80px;
+  &:after {
+    bottom: 100%;
+  }
+}
+
+.cactus-1 {
+  &:hover {
+    height: 210px;
+    + .cactus-body {
+      height: 145px;
+      ~ .cactus-body {
+        height: 120px;
+      }
+    }
+  }
+}
+.cactus-2 {
+  background-color: rgba(0,0,0,.5);
+  left: 85px;
+  width: 18px;
+  height: 125px;
+  [class^="cactus-arm-"], [class^="cactus-arm-"]:after {
+    background-color: rgba(0,0,0,.5);
+  }
+  [class^="cactus-arm-"] {
+    width: 32px;
+    height: 16px;
+  }
+  [class^="cactus-arm-"]:after {
+    width: 14px;
+    height: 26px;
+  }
+}
+.cactus-3 {
+  background-color: rgba(0,0,0,.3);
+  left: -70px;
+  width: 16px;
+  height: 110px;
+  [class^="cactus-arm-"], [class^="cactus-arm-"]:after {
+    background-color: rgba(0,0,0,.3);
+  }  
+  [class^="cactus-arm-"] {
+    width: 28px;
+    height: 14px;
+  }
+  [class^="cactus-arm-"]:after {
+    width: 12px;
+    height: 22px;
+  }
+}
+
+
+
+
+

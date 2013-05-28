@@ -1,0 +1,287 @@
+@-webkit-keyframes sunset {
+ 0%   { background-color: rgba(0,0,0,0); } 
+ 100% { background-color: rgba(0,0,0,.75); }
+}
+
+@-webkit-keyframes anim-1 {
+  0%   { background: $bg; } 
+  100% { background: lighten($bg2, 5%); }
+}
+
+@-moz-keyframes anim-1 {
+  0%   { background: $bg; } 
+  100% { background: lighten($bg2, 5%); }
+}
+
+@-webkit-keyframes anim-2 {
+  0%   { background: lighten($bg, 5%); } 
+  100% { background: lighten($bg2, 10%); }
+}
+
+@-moz-keyframes anim-2 {
+  0%   { background: lighten($bg, 5%); } 
+  100% { background: lighten($bg2, 10%); }
+}
+
+@-webkit-keyframes anim-3 {
+  0%   { background: lighten($bg, 10%); } 
+  100% { background: lighten($bg2, 15%); }
+}
+
+@-moz-keyframes anim-3 {
+  0%   { background: lighten($bg, 10%); } 
+  100% { background: lighten($bg2, 15%); }
+}
+
+@-webkit-keyframes anim-4 {
+  0%   { background: lighten($bg, 15%); } 
+  100% { background: lighten($bg2, 20%); }
+}
+
+@-moz-keyframes anim-4 {
+  0%   { background: lighten($bg, 15%); } 
+  100% { background: lighten($bg2, 20%); }
+}
+
+@-webkit-keyframes anim-5 {
+  0%   { background: lighten($bg2, 25%); } 
+  100% { background: lighten($bg, 20%); }
+}
+
+@-moz-keyframes anim-5 {
+  0%   { background: lighten($bg2, 25%); } 
+  100% { background: lighten($bg, 20%); }
+}
+
+@-webkit-keyframes anim-6 {
+  100%   { background: lighten($bg, 15%); } 
+  0% { background: lighten($bg2, 20%); }
+}
+
+@-moz-keyframes anim-6 {
+  100%   { background: lighten($bg, 15%); } 
+  0% { background: lighten($bg2, 20%); }
+}
+
+@-webkit-keyframes anim-7 {
+  100%   { background: lighten($bg, 10%); } 
+  0% { background: lighten($bg2, 15%); }
+}
+
+@-moz-keyframes anim-7 {
+  100%   { background: lighten($bg, 10%); } 
+  0% { background: lighten($bg2, 15%); }
+}
+
+@-webkit-keyframes anim-8 {
+  100%   { background: lighten($bg, 5%); } 
+  0% { background: lighten($bg2, 10%); }
+}
+
+@-moz-keyframes anim-8 {
+  100%   { background: lighten($bg, 5%); } 
+  0% { background: lighten($bg2, 10%); }
+}
+
+@-webkit-keyframes anim-9 {
+  100%   { background: $bg; } 
+  0% { background: lighten($bg2, 5%); }
+}
+
+@-moz-keyframes anim-9 {
+  100%   { background: $bg; } 
+  0% { background: lighten($bg2, 5%); }
+}
+
+@-webkit-keyframes Floating {
+  from {-webkit-transform:translate(0, 0px); }
+  55% {-webkit-transform:translate(0, 10px); }
+  to {-webkit-transform: translate(0, -0px); }    
+}
+    
+@-moz-keyframes Floating {
+  from {-moz-transform:translate(0, 0px); }
+  55% {-moz-transform:translate(0, 10px); }
+  to {-moz-transform: translate(0, -0px); }    
+}
+
+@mixin logo-animation($anim-name) {
+  -moz-animation: $anim-name 3s infinite alternate linear;
+  -webkit-animation: $anim-name 3s infinite alternate linear;
+}
+
+.logo {
+  @extend %selfclear;
+  -webkit-animation-name: Floating;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating;
+  -moz-animation-duration: 3s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  background-color: #FFF;
+  border-radius: 3%;
+  @include border-radius(3%);
+  @include box-shadow(0 0 30px rgba(0,0,0,.3));
+  float: right;
+  margin: 20px auto;
+  padding: 1%;
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  &:before {
+    color: #FFF;
+  //  border-style: solid;
+  //  border-width: 0 20px 30px 0;
+  //  border-color: transparent #FFF transparent transparent;
+    content: "◥";
+    font-family: Helvetica, 'DejaVu Sans', 'Arial Unicode MS', 'Lucida Sans Unicode', sans-serif;
+    font-size: 46px;
+    line-height: 1;
+    position: absolute;
+    bottom: -35px;
+    right: 22%;
+  //  width: 0px;
+  // height: 0px;
+    text-shadow: 0 0 30px rgba(0,0,0,.3);
+    clip:rect(11px,100px,100px,-100px);
+  }
+
+  span {
+    background: $bg;
+    @include box-shadow(0 0 10px rgba(0,0,0,.2) inset);
+    float: left;
+    overflow: hidden;
+    padding-bottom: 33.333333%;
+    position: relative;
+    width: 33.33333%;
+    height: 0;
+    text-indent: -99999px;
+    &:before, &:after {
+      background: rgba(255,255,255,1.0);
+      @include box-shadow;
+      content: " ";
+      position: absolute;
+      width: 10%;
+    }
+    b {
+      &:before, &:after {
+        background: rgba(255,255,255,1.0);
+        @include box-shadow;
+        content: " ";
+        position: absolute;
+      }  
+    }
+    &.j {
+      @include logo-animation(anim-1);
+      &:before {
+        top: 0;
+        left: 0;
+        height: 20%;
+      }
+    }
+    &.a {
+      @include logo-animation(anim-2);
+    }
+    &.a, &.aa {
+      background: lighten($bg, 5%);
+      &:before {
+        margin-left: -5%;
+        bottom: 0;
+        left: 50%;
+        height: 20%;
+      }
+      &:after {
+        margin-left: -5%;
+        bottom: 50%;
+        left: 50%;
+        height: 10%;
+      }
+    }
+    &.c {
+      @include border-top-right-radius(6%);
+      background: lighten($bg, 10%);
+      @include logo-animation(anim-3);
+      &:before {
+        margin-top: -10%;
+        top: 50%;
+        right: 0;
+        height: 20%;
+      }
+    }
+    &.k {
+      background: lighten($bg, 15%);
+      @include logo-animation(anim-4);
+      &:before {
+        margin-top: -5%;
+        top: 50%;
+        right: 0;
+        height: 10%;
+      }  
+        &:after {
+        margin-right: -5%;
+        top: 0;
+        right: 50%;
+        height: 10%;
+      }
+      b {
+        &:before {
+          margin-right: -5%;
+          bottom: 0;
+          right: 50%;
+          height: 10%;
+        }    
+      }    
+    }
+    &.b {
+      @include logo-animation(anim-5);
+    }
+    &.b, &.bb {
+      background: lighten($bg2, 25%);
+      &:before {
+        margin-right: -5%;
+        bottom: 25%;
+        right: 50%;
+        height: 10%;
+      }
+      &:after {
+        margin-right: -5%;
+        top: 25%;
+        right: 50%;
+        height: 10%;
+      }
+    } 
+    &.o {
+      background: lighten($bg2, 20%);
+      @include logo-animation(anim-6);
+      &:before {
+        margin-top: -10%;
+        margin-right: -5%;
+        top: 50%;
+        right: 50%;
+        height: 20%;
+      }    
+    } 
+    &.u {
+      @include border-bottom-left-radius(6%);
+      background: lighten($bg2, 15%);
+      @include logo-animation(anim-7);
+      &:before {
+        margin-right: -5%;
+        top: 0;
+        right: 50%;
+        height: 20%;
+      }    
+    } 
+    &.bb {
+      background: lighten($bg2, 10%);
+      @include logo-animation(anim-8);
+    } 
+    &.aa {
+      @include border-bottom-right-radius(6%);
+      background: lighten($bg2, 5%);
+      @include logo-animation(anim-9);
+    }   
+  }
+}
