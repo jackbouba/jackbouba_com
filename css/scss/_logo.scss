@@ -1,125 +1,66 @@
-@-webkit-keyframes sunset {
+@include keyframes(sunset) {
  0%   { background-color: rgba(0,0,0,0); } 
  100% { background-color: rgba(0,0,0,.75); }
 }
 
-@-webkit-keyframes anim-1 {
+@include keyframes(letter-1) {
   0%   { background: $bg; } 
   100% { background: lighten($bg2, 5%); }
 }
 
-@-moz-keyframes anim-1 {
-  0%   { background: $bg; } 
-  100% { background: lighten($bg2, 5%); }
-}
-
-@-webkit-keyframes anim-2 {
+@include keyframes(letter-2) {
   0%   { background: lighten($bg, 5%); } 
   100% { background: lighten($bg2, 10%); }
 }
 
-@-moz-keyframes anim-2 {
-  0%   { background: lighten($bg, 5%); } 
-  100% { background: lighten($bg2, 10%); }
-}
-
-@-webkit-keyframes anim-3 {
+@include keyframes(letter-3) {
   0%   { background: lighten($bg, 10%); } 
   100% { background: lighten($bg2, 15%); }
 }
 
-@-moz-keyframes anim-3 {
-  0%   { background: lighten($bg, 10%); } 
-  100% { background: lighten($bg2, 15%); }
-}
-
-@-webkit-keyframes anim-4 {
+@include keyframes(letter-4) {
   0%   { background: lighten($bg, 15%); } 
   100% { background: lighten($bg2, 20%); }
 }
 
-@-moz-keyframes anim-4 {
-  0%   { background: lighten($bg, 15%); } 
-  100% { background: lighten($bg2, 20%); }
-}
-
-@-webkit-keyframes anim-5 {
+@include keyframes(letter-5) {
   0%   { background: lighten($bg2, 25%); } 
   100% { background: lighten($bg, 20%); }
 }
 
-@-moz-keyframes anim-5 {
-  0%   { background: lighten($bg2, 25%); } 
-  100% { background: lighten($bg, 20%); }
-}
-
-@-webkit-keyframes anim-6 {
+@include keyframes(letter-6) {
   100%   { background: lighten($bg, 15%); } 
   0% { background: lighten($bg2, 20%); }
 }
 
-@-moz-keyframes anim-6 {
-  100%   { background: lighten($bg, 15%); } 
-  0% { background: lighten($bg2, 20%); }
-}
-
-@-webkit-keyframes anim-7 {
+@include keyframes(letter-7) {
   100%   { background: lighten($bg, 10%); } 
   0% { background: lighten($bg2, 15%); }
 }
 
-@-moz-keyframes anim-7 {
-  100%   { background: lighten($bg, 10%); } 
-  0% { background: lighten($bg2, 15%); }
-}
-
-@-webkit-keyframes anim-8 {
+@include keyframes(letter-8) {
   100%   { background: lighten($bg, 5%); } 
   0% { background: lighten($bg2, 10%); }
 }
 
-@-moz-keyframes anim-8 {
-  100%   { background: lighten($bg, 5%); } 
-  0% { background: lighten($bg2, 10%); }
-}
-
-@-webkit-keyframes anim-9 {
+@include keyframes(letter-9) {
   100%   { background: $bg; } 
   0% { background: lighten($bg2, 5%); }
 }
 
-@-moz-keyframes anim-9 {
-  100%   { background: $bg; } 
-  0% { background: lighten($bg2, 5%); }
-}
-
-@-webkit-keyframes Floating {
+@include keyframes(floating) {
   from {-webkit-transform:translate(0, 0px); }
   55% {-webkit-transform:translate(0, 10px); }
   to {-webkit-transform: translate(0, -0px); }    
 }
-    
-@-moz-keyframes Floating {
-  from {-moz-transform:translate(0, 0px); }
-  55% {-moz-transform:translate(0, 10px); }
-  to {-moz-transform: translate(0, -0px); }    
-}
 
 @mixin logo-animation($anim-name) {
-  -moz-animation: $anim-name 3s infinite alternate linear;
-  -webkit-animation: $anim-name 3s infinite alternate linear;
+  @include animation($anim-name 3s infinite alternate linear);
 }
 
 .logo {
   @extend %selfclear;
-  -webkit-animation-name: Floating;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-name: Floating;
-  -moz-animation-duration: 3s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: ease-in-out;
+  @include animation(floating 3s infinite ease-in-out);
   background-color: #FFF;
   border-radius: 3%;
   @include border-radius(3%);
@@ -174,7 +115,7 @@
       }  
     }
     &.j {
-      @include logo-animation(anim-1);
+      @include logo-animation(letter-1);
       &:before {
         top: 0;
         left: 0;
@@ -182,7 +123,7 @@
       }
     }
     &.a {
-      @include logo-animation(anim-2);
+      @include logo-animation(letter-2);
     }
     &.a, &.aa {
       background: lighten($bg, 5%);
@@ -202,7 +143,7 @@
     &.c {
       @include border-top-right-radius(6%);
       background: lighten($bg, 10%);
-      @include logo-animation(anim-3);
+      @include logo-animation(letter-3);
       &:before {
         margin-top: -10%;
         top: 50%;
@@ -212,7 +153,7 @@
     }
     &.k {
       background: lighten($bg, 15%);
-      @include logo-animation(anim-4);
+      @include logo-animation(letter-4);
       &:before {
         margin-top: -5%;
         top: 50%;
@@ -235,7 +176,7 @@
       }    
     }
     &.b {
-      @include logo-animation(anim-5);
+      @include logo-animation(letter-5);
     }
     &.b, &.bb {
       background: lighten($bg2, 25%);
@@ -254,7 +195,7 @@
     } 
     &.o {
       background: lighten($bg2, 20%);
-      @include logo-animation(anim-6);
+      @include logo-animation(letter-6);
       &:before {
         margin-top: -10%;
         margin-right: -5%;
@@ -266,7 +207,7 @@
     &.u {
       @include border-bottom-left-radius(6%);
       background: lighten($bg2, 15%);
-      @include logo-animation(anim-7);
+      @include logo-animation(letter-7);
       &:before {
         margin-right: -5%;
         top: 0;
@@ -276,12 +217,12 @@
     } 
     &.bb {
       background: lighten($bg2, 10%);
-      @include logo-animation(anim-8);
+      @include logo-animation(letter-8);
     } 
     &.aa {
       @include border-bottom-right-radius(6%);
       background: lighten($bg2, 5%);
-      @include logo-animation(anim-9);
+      @include logo-animation(letter-9);
     }   
   }
 }
