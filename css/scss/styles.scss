@@ -1,15 +1,17 @@
 // ================================================================== \\
 // VARIABLES
 // ================================================================== //
-$bg: #007766;
-$bg2: #22CC22;
+$logoBg: #007766;
+$logoBg2: #22CC22;
+
+$ltGrey: #414141;
+$drkGrey: #212121;
+$green: #059777;
 
 $default-box-shadow-color: rgba(0,0,0,.2);
 $default-box-shadow-h-offset: 0;
 $default-box-shadow-v-offset: 0;
 $default-box-shadow-blur: 10px;
-
-$green: #059777;  
 
 // ================================================================== \\
 // IMPORTS
@@ -70,12 +72,15 @@ $green: #059777;
 }
 
 // ================================================================== \\
-// GLOBAL STYLES
+// GLOBAL
 // ================================================================== //
 body, pre, h1, h2, h3, h4, h5, h6 {
   color: #FFF;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+}
+body {
+	background: $ltGrey url('../images/noise.png');
 }
 hr {
   border-bottom: 1px solid rgba(0,0,0,.3);
@@ -113,7 +118,10 @@ a {
   width: 50%;
 }
 .third {
-  width: 30%;
+  width: 33%;
+}
+.two-thirds {
+	width: 66.6%;
 }
 .no-m {
   margin: 0;
@@ -137,7 +145,7 @@ a {
 }
 
 // ================================================================== \\
-// HEADER STYLES
+// HEADER
 // ================================================================== //
 .page-header {
   background: #944b40 url('../images/noise.png');
@@ -160,5 +168,20 @@ a {
 }
 
 .haiku {
-  margin: 0 0 1em;
+	display: none;
+	&.visible {
+		display: block;
+	}
+	pre {
+		margin: 0 0 1em;
+	}
+}
+
+// ================================================================== \\
+// PORTFOLIO
+// ================================================================== //
+
+.portfolio {
+	background: $drkGrey url('../images/noise.png');
+	height: 200px;
 }

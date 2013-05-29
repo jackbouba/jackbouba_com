@@ -4,54 +4,54 @@
 }
 
 @include keyframes(letter-1) {
-  0%   { background: $bg; } 
-  100% { background: lighten($bg2, 5%); }
+  0%   { background: $logoBg; } 
+  100% { background: lighten($logoBg2, 5%); }
 }
 
 @include keyframes(letter-2) {
-  0%   { background: lighten($bg, 5%); } 
-  100% { background: lighten($bg2, 10%); }
+  0%   { background: lighten($logoBg, 5%); } 
+  100% { background: lighten($logoBg2, 10%); }
 }
 
 @include keyframes(letter-3) {
-  0%   { background: lighten($bg, 10%); } 
-  100% { background: lighten($bg2, 15%); }
+  0%   { background: lighten($logoBg, 10%); } 
+  100% { background: lighten($logoBg2, 15%); }
 }
 
 @include keyframes(letter-4) {
-  0%   { background: lighten($bg, 15%); } 
-  100% { background: lighten($bg2, 20%); }
+  0%   { background: lighten($logoBg, 15%); } 
+  100% { background: lighten($logoBg2, 20%); }
 }
 
 @include keyframes(letter-5) {
-  0%   { background: lighten($bg2, 25%); } 
-  100% { background: lighten($bg, 20%); }
+  0%   { background: lighten($logoBg2, 25%); } 
+  100% { background: lighten($logoBg, 20%); }
 }
 
 @include keyframes(letter-6) {
-  100%   { background: lighten($bg, 15%); } 
-  0% { background: lighten($bg2, 20%); }
+  100%   { background: lighten($logoBg, 15%); } 
+  0% { background: lighten($logoBg2, 20%); }
 }
 
 @include keyframes(letter-7) {
-  100%   { background: lighten($bg, 10%); } 
-  0% { background: lighten($bg2, 15%); }
+  100%   { background: lighten($logoBg, 10%); } 
+  0% { background: lighten($logoBg2, 15%); }
 }
 
 @include keyframes(letter-8) {
-  100%   { background: lighten($bg, 5%); } 
-  0% { background: lighten($bg2, 10%); }
+  100%   { background: lighten($logoBg, 5%); } 
+  0% { background: lighten($logoBg2, 10%); }
 }
 
 @include keyframes(letter-9) {
-  100%   { background: $bg; } 
-  0% { background: lighten($bg2, 5%); }
+  100%   { background: $logoBg; } 
+  0% { background: lighten($logoBg2, 5%); }
 }
 
 @include keyframes(floating) {
-  from {-webkit-transform:translate(0, 0px); }
-  55% {-webkit-transform:translate(0, 10px); }
-  to {-webkit-transform: translate(0, -0px); }    
+  from { @include translate(0, 0px); }
+  55% { @include translate(0, 10px); }
+  to { @include translate(0, 0px); }    
 }
 
 @mixin logo-animation($anim-name) {
@@ -90,7 +90,7 @@
   }
 
   span {
-    background: $bg;
+    background: $logoBg;
     @include box-shadow(0 0 10px rgba(0,0,0,.2) inset);
     float: left;
     overflow: hidden;
@@ -126,7 +126,7 @@
       @include logo-animation(letter-2);
     }
     &.a, &.aa {
-      background: lighten($bg, 5%);
+      background: lighten($logoBg, 5%);
       &:before {
         margin-left: -5%;
         bottom: 0;
@@ -142,7 +142,7 @@
     }
     &.c {
       @include border-top-right-radius(6%);
-      background: lighten($bg, 10%);
+      background: lighten($logoBg, 10%);
       @include logo-animation(letter-3);
       &:before {
         margin-top: -10%;
@@ -152,7 +152,7 @@
       }
     }
     &.k {
-      background: lighten($bg, 15%);
+      background: lighten($logoBg, 15%);
       @include logo-animation(letter-4);
       &:before {
         margin-top: -5%;
@@ -179,7 +179,7 @@
       @include logo-animation(letter-5);
     }
     &.b, &.bb {
-      background: lighten($bg2, 25%);
+      background: lighten($logoBg2, 25%);
       &:before {
         margin-right: -5%;
         bottom: 25%;
@@ -194,7 +194,7 @@
       }
     } 
     &.o {
-      background: lighten($bg2, 20%);
+      background: lighten($logoBg2, 20%);
       @include logo-animation(letter-6);
       &:before {
         margin-top: -10%;
@@ -206,7 +206,7 @@
     } 
     &.u {
       @include border-bottom-left-radius(6%);
-      background: lighten($bg2, 15%);
+      background: lighten($logoBg2, 15%);
       @include logo-animation(letter-7);
       &:before {
         margin-right: -5%;
@@ -216,12 +216,12 @@
       }    
     } 
     &.bb {
-      background: lighten($bg2, 10%);
+      background: lighten($logoBg2, 10%);
       @include logo-animation(letter-8);
     } 
     &.aa {
       @include border-bottom-right-radius(6%);
-      background: lighten($bg2, 5%);
+      background: lighten($logoBg2, 5%);
       @include logo-animation(letter-9);
     }   
   }

@@ -262,33 +262,19 @@ sub {
 * Address margins set differently in IE 6/7.
 */
 
-dl,
+dl, dd, dt,
 menu,
 ol,
 ul {
-  margin: 1em 0;
-}
-
-dd {
-  margin: 0 0 0 40px;
+  margin: 0;
+	padding: 0;
 }
 
 /**
 * Address paddings set differently in IE 6/7.
 */
 
-menu,
-ol,
-ul {
-  padding: 0 0 0 40px;
-}
-
-/**
-* Correct list images handled incorrectly in IE 7.
-*/
-
-nav ul,
-nav ol {
+ul, ol {
   list-style: none;
   list-style-image: none;
 }
