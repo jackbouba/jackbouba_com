@@ -61,10 +61,9 @@
 .logo {
   @extend %selfclear;
   @include animation(floating 3s infinite ease-in-out);
-  background-color: #FFF;
-  border-radius: 3%;
   @include border-radius(3%);
   @include box-shadow(0 0 30px rgba(0,0,0,.3));
+  background-color: #FFF;
   float: right;
   margin: 20px auto;
   padding: 1%;
