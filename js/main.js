@@ -30,12 +30,11 @@
 		var $this = this;
 		function cycleNext() {
 			$this.find('.visible').removeClass('visible')
-			.end().find("li:eq(" + j + ")").addClass('visible');
+			.end().find('li:eq(' + j + ')').addClass('visible');
 			(j == jmax) ? j=0 : j++;
 		};	
 		cycleNext();
 		$(document).on('click', '.cycleNext', function(event) {
-			console.log('clicked!');
 			event.preventDefault();
 			cycleNext();
 		});
@@ -44,9 +43,8 @@
 })(jQuery);
 
 jQuery(function($) {
-	
-	$('.haiku-cycle').cycle();
-	
+
+  $('.haiku-cycle').cycle();
 	
 	
 });
